@@ -21,6 +21,13 @@
  		<value>PHD</value>
  	</list>
  </property>
- 
+<property name="scourses">
+	<set>
+		<value>C</value>
+		<value>C++</value>
+		<value>Java</value>
+		<value>Python</value>
+	</set>
+</property> 
  </bean>
  </beans>

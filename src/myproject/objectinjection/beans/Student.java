@@ -1,6 +1,7 @@
 package myproject.objectinjection.beans;
 
 import java.util.List;
+import java.util.Set;
 
 public class Student {
 
@@ -8,6 +9,8 @@ public class Student {
 	private String sname;
 	private Address saddr;
 	private List<String> squal;
+	private Set<String> scourses;
+	
 	public String getSid() {
 		return sid;
 	}
@@ -34,6 +37,13 @@ public class Student {
 		this.squal = squal;
 	}
 
+	public Set<String> getScourses() {
+		return scourses;
+	}
+	public void setScourses(Set<String> scourses) {
+		this.scourses = scourses;
+	}
+	
 	public void getStudentDetails() {
 		System.out.println("Student Details");
 		System.out.println("----------------------------------");
@@ -44,6 +54,10 @@ public class Student {
 		for(String qual:squal) {
 			System.out.print(qual+" ");
 		}
+		System.out.println();
+		System.out.print("Student Courses 		: ");
+		for(String courses : scourses)
+			System.out.print(courses+" ");
 		System.out.println();
 		System.out.println("Student Address");
 		System.out.println("----------------------------------");
