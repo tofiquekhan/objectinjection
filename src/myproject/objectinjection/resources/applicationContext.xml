@@ -29,5 +29,14 @@
 		<value>Python</value>
 	</set>
 </property> 
+<property name="scoursesAndFaculty">
+	<map>
+		<entry key="C" value="Himanshu"/>
+		<entry key="Java" value="Tofique"/>
+		<entry key="Python" value="Vinayak"/>
+	
+	</map>
+
+</property>
  </bean>
  </beans>
