@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="addressBean" class="myproject.objectinjection.beans.Address">
+ <property name="pno" value="53"/>
+ <property name="street" value="Ring Road"/>
+ <property name="city" value="Indore"/>
+ <property name="state" value="M.P."/>
+ <property name="country" value="india"/>
+ </bean>
+ <bean id="stdBean" class="myproject.objectinjection.beans.Student">
+ <property name="sid" value="S-121"/>
+ <property name="sname" value="Tofique Ahmed Khan"/>
+ <property name="saddr" ref="addressBean"/>
+ 
+ </bean>
+ </beans>
