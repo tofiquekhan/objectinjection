@@ -14,6 +14,13 @@
  <property name="sid" value="S-121"/>
  <property name="sname" value="Tofique Ahmed Khan"/>
  <property name="saddr" ref="addressBean"/>
+ <property name="squal">
+ 	<list>
+ 		<value>BCA</value>
+ 		<value>MCA</value>
+ 		<value>PHD</value>
+ 	</list>
+ </property>
  
  </bean>
  </beans>

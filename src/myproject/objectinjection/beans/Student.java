@@ -1,10 +1,13 @@
 package myproject.objectinjection.beans;
 
+import java.util.List;
+
 public class Student {
 
 	private String sid;
 	private String sname;
 	private Address saddr;
+	private List<String> squal;
 	public String getSid() {
 		return sid;
 	}
@@ -24,11 +27,24 @@ public class Student {
 		this.saddr = saddr;
 	}
 	
+	public List<String> getSqual() {
+		return squal;
+	}
+	public void setSqual(List<String> squal) {
+		this.squal = squal;
+	}
+
 	public void getStudentDetails() {
 		System.out.println("Student Details");
 		System.out.println("----------------------------------");
 		System.out.println("Student Id 			: "+sid);
 		System.out.println("Student Name 		: "+sname);
+		System.out.print("Student Qualifications  : ");
+		
+		for(String qual:squal) {
+			System.out.print(qual+" ");
+		}
+		System.out.println();
 		System.out.println("Student Address");
 		System.out.println("----------------------------------");
 		System.out.println("Flate Number		: "+saddr.getPno());
