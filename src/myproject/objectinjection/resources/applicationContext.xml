@@ -38,5 +38,13 @@
 	</map>
 
 </property>
+<property name="scourseAndCost">
+	<props>
+		<prop key="C" >1000</prop>
+		<prop key="Java">5000</prop>
+		<prop key="Python">4000</prop>
+	</props>
+</property>
+
  </bean>
  </beans>

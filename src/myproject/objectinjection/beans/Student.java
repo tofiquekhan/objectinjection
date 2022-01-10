@@ -2,6 +2,7 @@ package myproject.objectinjection.beans;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class Student {
@@ -12,6 +13,7 @@ public class Student {
 	private List<String> squal;
 	private Set<String> scourses;
 	private Map<String, String> scoursesAndFaculty;
+	private Properties scourseAndCost;
 	
 	public String getSid() {
 		return sid;
@@ -54,6 +56,13 @@ public class Student {
 	public void setScoursesAndFaculty(Map<String, String> scoursesAndFaculty) {
 		this.scoursesAndFaculty = scoursesAndFaculty;
 	}
+	
+	public Properties getScourseAndCost() {
+		return scourseAndCost;
+	}
+	public void setScourseAndCost(Properties scourseAndCost) {
+		this.scourseAndCost = scourseAndCost;
+	}
 	public void getStudentDetails() {
 		System.out.println("Student Details");
 		System.out.println("----------------------------------");
@@ -70,7 +79,7 @@ public class Student {
 			System.out.print(courses+" ");
 		System.out.println();
 		System.out.println("Student Courses and Faculty : "+scoursesAndFaculty);
-		
+		System.out.println("Student Courses and Cost 	: "+scourseAndCost);
 		System.out.println();
 		System.out.println("Student Address");
 		System.out.println("----------------------------------");
